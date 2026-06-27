@@ -1,0 +1,121 @@
+@font-face{
+    font-family: ErikFont;
+    src: url("font/ErikCuric.ttf");
+}
+
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#efe3d2;
+    color:#2f2118;
+    line-height:1.6;
+}
+
+.hero{
+    min-height:360px;
+    padding:55px 20px;
+    text-align:center;
+    color:white;
+    background:
+        linear-gradient(rgba(55,36,24,0.65), rgba(55,36,24,0.65)),
+        url("slike/pozadina.jpg") center/cover no-repeat;
+}
+
+header.obicni{
+    background:#5b3827;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+h1{
+    font-family: ErikFont, Georgia, serif;
+    font-size:58px;
+    margin:0 0 8px 0;
+    letter-spacing:1px;
+}
+
+h2{color:#5b3827;margin-top:0}
+h3{margin-bottom:8px;color:#6b442e}
+.podnaslov{font-size:24px;margin:0;}
+
+.navigacija{
+    background:#3b261b;
+    text-align:center;
+    padding:13px;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.navigacija a{
+    color:white;
+    text-decoration:none;
+    margin:0 14px;
+    font-weight:bold;
+}
+.navigacija a:hover{
+    color:#d9b38c;
+}
+
+main{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 20px;
+}
+
+.kartica{
+    background:#fffaf3;
+    padding:22px;
+    border-radius:14px;
+    margin-bottom:22px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
+
+.galerija{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.galerija img, .vjezba img{
+    width:100%;
+    border-radius:10px;
+    border:3px solid #d8c1a8;
+    background:white;
+}
+
+.vjezba{
+    background:#fffaf3;
+    padding:18px;
+    border-radius:14px;
+    margin-bottom:24px;
+    box-shadow:0 2px 9px rgba(0,0,0,0.10);
+}
+
+.video-box{
+    background:#fffaf3;
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
+video{
+    width:100%;
+    max-height:620px;
+    border-radius:12px;
+    background:black;
+}
+
+a{color:#6b3f27;font-weight:bold}
+footer{
+    text-align:center;
+    background:#3b261b;
+    color:white;
+    padding:18px;
+    margin-top:35px;
+}
+
+@media(max-width:650px){
+    h1{font-size:42px}
+    .navigacija a{display:block;margin:8px 0}
+}
